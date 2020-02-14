@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
+import {Mode} from './Mode';
 
 class App extends React.Component {
   state = {
@@ -20,6 +21,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>Women's World Cup</h1>
+        <Mode />
         {this.state.players ? this.state.players.map(player => (
          <div>
            <h3>{player.name}</h3>
