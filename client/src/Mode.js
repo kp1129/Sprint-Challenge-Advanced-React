@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {useDarkMode} from './hooks/useDarkMode';
+import "./Mode.css";
 
 export const Mode = () => {
     const [darkMode, setDarkMode] = useDarkMode();
@@ -9,6 +10,6 @@ export const Mode = () => {
     }
 
     return (
-    <div onClick={toggleMode}>Mode: {darkMode ? "dark" : "light"}</div>
+    <div className="mode" onClick={toggleMode}>Mode: {darkMode ? "dark" : "light"}</div>
     )
 }
