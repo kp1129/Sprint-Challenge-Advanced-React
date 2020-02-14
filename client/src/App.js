@@ -25,11 +25,11 @@ class App extends React.Component {
         <h1>Women's World Cup</h1>
         <Mode />
         <div className="players-container">
-        {this.state.players ? (
-          this.state.players.map(player => <Player player={player} />)
-        ) : (
-          <p>Loading...</p>
-        )}
+          {this.state.players ? (
+            this.state.players.map(player => <Player player={player} />)
+          ) : (
+            <p>Loading...</p>
+          )}
         </div>
       </div>
     );
